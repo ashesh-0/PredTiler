@@ -1,0 +1,1 @@
+A lean wrapper around your dataset class to enable tiled prediction and inference. 
