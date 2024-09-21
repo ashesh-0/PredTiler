@@ -1,10 +1,7 @@
 from unittest.mock import Mock
 import numpy as np
 from predtiler.dataset import get_tiling_dataset, get_tile_manager
-# import sys; sys.path.append('../')
 from predtiler.tile_stitcher import stitch_predictions
-from predtiler.tile_manager import TilingMode
-from functools import partial
 
 def get_data_3D(n=5,Z=9, H=512,W=512,C=2):
     data = np.arange(n*Z*H*W*C).reshape(n,Z,H,W,C)
