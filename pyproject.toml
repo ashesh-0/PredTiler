@@ -17,7 +17,7 @@ sources = ["src"]
 [project]
 name = "predtiler"
 version = "0.0.1"
-description = "Converting your dataset class into a class that can be used for tiled prediction and eventually obtain stiched prediction."
+description = "Subclassing your dataset class into a new class that can be used for tiled prediction to obtain the stitched prediction."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
