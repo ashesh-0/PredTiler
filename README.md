@@ -57,7 +57,7 @@ For this we also need a tile manager that will manage the tiles.
 
 ```python
 
-from predtiler.dataset import get_tiling_dataset, get_tile_manager
+from predtiler import get_tiling_dataset, get_tile_manager, stitch_predictions
 patch_size = 256
 tile_size = 128
 data_shape = (10, 2048, 2048) # size of the data you are working with
