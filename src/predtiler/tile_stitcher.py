@@ -15,8 +15,7 @@ def stitch_predictions(predictions:np.ndarray, manager):
     mng = manager
     shape = list(mng.data_shape)
     shape.append(predictions.shape[1])
-    print(shape)
-
+    assert mng.patch_shape[-2:] == predictions.shape[-2:], 'Patch shape and predictions shape must match. Please set the patch shape correctly'
     output = np.zeros(shape, dtype=predictions.dtype)
     for dset_idx in range(predictions.shape[0]):
         # grid start, grid end
