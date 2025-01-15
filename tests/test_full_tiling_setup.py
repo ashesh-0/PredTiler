@@ -1,7 +1,6 @@
 from unittest.mock import Mock
 import numpy as np
-from predtiler.dataset import get_tiling_dataset, get_tile_manager
-from predtiler.tile_stitcher import stitch_predictions
+from predtiler import get_tiling_dataset, get_tile_manager, stitch_predictions
 
 def get_data_3D(n=5,Z=9, H=512,W=512,C=2):
     data = np.arange(n*Z*H*W*C).reshape(n,Z,H,W,C)
